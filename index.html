@@ -4,103 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>the surfing project</title>
 </head>
 <body>
-<!--jumbotron-->
-<div>
-    <!--navbar-->
-    <div>
-        <a href="#home">
-            <img src="img/home.jpg" alt="">TSP
-        </a>
-        <a href="#points">3 points</a>
-        <a href="#testimony">Témoignage</a>
-        <a href="#price">Price</a>
+<!--navbar expand whiteText bgDark-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#home">TSP</a>
+        <!--button collapse show on mobile device-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-1 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#3points">3 points</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#testimony">Témoignage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#price">Price</a>
+            </li>
+        </ul>
     </div>
+</nav>
+<!--jumbotron-->
+<div class="jumbotron d-flex align-items-center text-white" style="height:100vh; background-image: url(img/bg-surf.jpeg); background-size: cover;">
     <!--center text home page-->
-    <div>
+    <div class="container text-center">
         <h2>Let's get going</h1>
         <p>Discover our peer-learning surf school.</p>
-        <a href="#">Inscription for next session</a>
-        <a href="#">Program Discovery</a>
+        <!--row for button col==4:lg==2 with around-->
+        <div class="row justify-content-around">
+            <button class="col-4 col-lg-2 btn-primary border-0" style="border-radius:2px">Inscription</button>
+            <button class="col-4 col-lg-2 btn-secondary border-0" style="border-radius:2px">Program</button>
+        </div>
     </div>
 </div>
 <!--section 3 points-->
-<div>
-    <!--cheap-->
-    <div>
+<section class="mt-5"id="3points">
+    <div class="text-center">
         <h1>The Surfing Project in 3 points</h1>
-        <img src="img/money.png" alt="">
-        <h3>Cheap</h3>
-        <p>blablabl abalbla blablabl abalbla</p>
     </div>
-    <!--cool-->
-    <div>
-        <img src="img/sofa.png" alt="">
-        <h3>Cool</h3>
-        <p>blablabl abalbla blablabl abalbla</p>
+    <!--row col12:lg4-->
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <!--cheap-->
+            <div class="col-12 col-lg-4">
+                <img src="img/money.png" width="200" alt="">
+                <h3>Cheap</h3>
+                <p>blablabl abalbla blablabl abalbla</p>
+            </div>
+            <!--cool-->
+            <div class="col-12 col-lg-4">
+                <img src="img/sofa.png" width="200" alt="">
+                <h3>Cool</h3>
+                <p>blablabl abalbla blablabl abalbla</p>
+            </div>
+            <!--ppl-->
+            <div class="col-12 col-lg-4">
+                <img src="img/monkey.png" width="200" alt="">
+                <h3>people</h3>
+                <p>blablabl abalbla blablabl abalbla</p>
+            </div>
+        </div>
     </div>
-    <!--ppl-->
-    <div>
-        <img src="img/monkey.png" alt="">
-        <h3>people</h3>
-        <p>blablabl abalbla blablabl abalbla</p>
-    </div>
-</div>
+</section>
 <!--section testimony-->
-<div>
-    <!--left-->
-    <div>
-        <img src="img/testi1.jpeg" alt="">
-        <p>blab albalabal blalablabalb albalaba</p>
-        <p>july, April 2019</p>
+<section class="mt-5" id="testimony">
+    <div class="text-center">
+        <h2>Testimony</h2>      
     </div>
-    <!--right-->
-    <div>
-        <img src="img/testi2.jpeg" alt="">
-        <p>blab albalabal blalablabalb albalaba</p>
-        <p>Antoine, December 2018</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 mb-3">
+                <div class="border">
+                    <div>
+                        <img src="img/testi1.jpeg" alt="" style="width: 100%">
+                    </div>
+                    <p class="mt-3">blab albalabal blalablabalb albalaba</p>
+                    <p class="text-secondary small">july, April 2019</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="border">
+                    <div style="width:100%">
+                        <img src="img/testi2.jpeg" alt="" style="width: 100%">
+                    </div>
+                    <p class="mt-3">blab albalabal blalablabalb albalaba</p>
+                    <p class="text-secondary small">Antoine, December 2018</p>
+                </div>
+            </div>
+        </div>  
     </div>
-</div> 
+</section> 
 <!--section price-->
-<div>
-    <h1>Price</h1>
-    <!--grid-->
-    <div>
-        <!--g1-->
-        <div>
-            <h3>Try</h3>
-            <p>0€</p>
-            <p>a</p>
-            <p>b</p>
-            <p>1 week</p>
-            <a href="#">sign for free</a>
-        </div>
-        <!--g2-->
-        <div>
-            <h3>Fly</h3>
-            <p>15€</p>
-            <p>a</p>
-            <p>b</p>
-            <p>1 week</p>
-            <a href="#">sign</a>
-        </div>
-        <!--g3-->
-        <div>
-            <h3>Try</h3>
-            <p>7€ <span class="smoothy">/ mo</span></p>
-            <p>a</p>
-            <p>b</p>
-            <p>1 week</p>
-            <a href="#">sign</a>
+<section class="mt-5" id="price">
+    <div class="text-center mb-4">
+        <h1>Price</h1>
+    </div>
+    <!--row col12:lg4-->
+    <div class="container text-center">
+        <div class="row">
+            <!--try week-->
+            <div class="col-12 col-lg-4 mb-2">
+                <div class="border" style="border-radius:2px">
+                    <div class="bg-secondary">
+                        <h4>Try</h4>
+                    </div>
+                    <h2>0€</h2>
+                    <div class="">
+                        <p class="small mt-0 mb-0">a</p>
+                        <p class="small mt-0 mb-0">b</p>
+                        <p class="small mt-0">1 week</p>
+                        <div class="m-2 text-primary border-primary border" style="border-radius:3px">
+                            <button class="bg-light">sign for free</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fly away-->
+            <div class="col-12 col-lg-4 mb-2">
+                <div class="border">
+                    <div class="bg-secondary">
+                        <h4>Fly</h4>
+                    </div>
+                    <h2>15€</h2>
+                    <div class="mt-3">
+                        <p class="small mt-0 mb-0">a</p>
+                        <p class="small mt-0 mb-0">b</p>
+                        <p class="small mt-0">1 week</p>
+                        <div class="m-2 btn-primary border" style="border-radius:3px">
+                            <button class="btn-primary border-0">sign</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--try time-->
+            <div class="col-12 col-lg-4">
+                <div class="border">
+                    <div class="bg-secondary">
+                        <h4>Try</h4>
+                    </div>
+                    <h2>7€ <span class="text-secondary small">/mo</span></h2>
+                    <div class="mt-3">
+                        <p class="small mt-0 mb-0">a</p>
+                        <p class="small mt-0 mb-0">b</p>
+                        <p class="small mt-0">1 week</p>
+                        <div class="m-2 btn-primary border" style="border-radius:3px">
+                            <button class="btn-primary border-0">sign</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <!--footer-->
 <footer>
     <img src="img/c.png" alt="">
     <p>bootstrap TSP by CC</p>
 </footer>
+<!--js for bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
